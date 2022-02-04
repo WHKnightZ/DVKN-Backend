@@ -1,0 +1,87 @@
+{
+  "users": [
+    {
+      "username": "khanh.nguyen",
+      "password_hash": "pbkdf2:sha256:260000$AtA6zXwmXGz7L1Te$9733b0f237bf030a10619a71206399f20459d46d9ae25a5f2a2bda41e6df476d",
+      "created_date": 1633277398,
+      "is_admin": true,
+      "level": 1,
+      "exp": 0
+    }
+  ],
+  "cards": [
+    {
+      "id": "than-lua",
+      "name": "Thần Lúa",
+      "thumbnail": "",
+      "type": 0,
+      "info": "",
+      "gender": 0,
+      "attack": 0,
+      "defend": 0,
+      "army": 0,
+      "created_date": 1633277398
+    },
+    {
+      "id": "dong-thuyen",
+      "name": "Đóng Thuyền",
+      "thumbnail": "",
+      "type": 0,
+      "info": "",
+      "gender": 0,
+      "attack": 0,
+      "defend": 0,
+      "army": 0,
+      "created_date": 1633277399
+    },
+    {
+      "id": "lai-buon",
+      "name": "Lái Buôn",
+      "thumbnail": "",
+      "type": 0,
+      "info": "",
+      "gender": 0,
+      "attack": 0,
+      "defend": 0,
+      "army": 0,
+      "created_date": 1633277400
+    },
+    {
+      "id": "no-le",
+      "name": "Nô Lệ",
+      "thumbnail": "",
+      "type": 0,
+      "info": "",
+      "gender": 0,
+      "attack": 0,
+      "defend": 0,
+      "army": 0,
+      "created_date": 1633277401
+    },
+    {
+      "id": "quan-lang",
+      "name": "Quan Lang",
+      "thumbnail": "",
+      "type": 0,
+      "info": "",
+      "gender": 0,
+      "attack": 0,
+      "defend": 0,
+      "army": 0,
+      "created_date": 1633277402,
+      "probability_register": 20
+    },
+    {
+      "id": "tho-san",
+      "name": "Thợ Săn",
+      "thumbnail": "",
+      "type": 0,
+      "info": "",
+      "gender": 0,
+      "attack": 0,
+      "defend": 0,
+      "army": 0,
+      "created_date": 1633277403
+    }
+  ]
+}

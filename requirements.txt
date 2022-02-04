@@ -1,0 +1,13 @@
+boto3==1.18.60
+botocore==1.21.60
+Flask==2.0.1
+Flask-Cors==3.0.10
+Flask-JWT-Extended==3.24.1
+Flask-SQLAlchemy==2.5.1
+marshmallow==3.12.2
+mysqlclient==2.0.3
+SQLAlchemy==1.4.21
+sqlalchemy-pagination==0.0.2
+Werkzeug==2.0.1
+pytz==2021.1
+PyJWT==1.7.1
