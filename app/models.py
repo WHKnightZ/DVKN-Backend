@@ -15,10 +15,17 @@ class User(db.Model):
     password_hash = db.Column(db.String(255))
     created_date = db.Column(INTEGER(unsigned=True), default=get_timestamp_now(), index=True)
     is_admin = db.Column(db.Boolean, default=0)
+    avatar = db.Column(db.String(200))
     deck = db.Column(db.String(200))
+
     level = db.Column(INTEGER(unsigned=True), default=1)
     exp = db.Column(INTEGER(unsigned=True), default=0)
     health = db.Column(INTEGER(unsigned=True), default=100)
+    gold = db.Column(INTEGER(unsigned=True), default=100)
+    diamond = db.Column(INTEGER(unsigned=True), default=100)
+    barrel = db.Column(INTEGER(unsigned=True), default=200)
+    total_battle = db.Column(INTEGER(unsigned=True), default=0)
+    win_battle = db.Column(INTEGER(unsigned=True), default=0)
 
     @classmethod
     def get_current_user(cls):
@@ -63,6 +70,7 @@ class UserCard(db.Model):
     attack = db.Column(INTEGER(unsigned=True), default=0)
     defend = db.Column(INTEGER(unsigned=True), default=0)
     army = db.Column(INTEGER(unsigned=True), default=0)
+    level = db.Column(INTEGER(unsigned=True), default=1)
 
     @classmethod
     def get_by_id(cls, _id):

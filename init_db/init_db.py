@@ -5,6 +5,7 @@ from flask import Flask
 from app.extensions import db
 from app.models import Card, User
 from app.settings import DevConfig, ProdConfig
+from app.utils import get_timestamp_now
 
 CONFIG = ProdConfig if os.environ.get('ENV') == 'prd' else DevConfig
 
@@ -29,11 +30,16 @@ class Worker:
             self.default_data = json.load(file)
 
     def insert_default_items(self, key, constructor):
+        now = get_timestamp_now()
         items = self.default_data.get(key, {})
         for item in items:
             instance = constructor()
             for key in item.keys():
                 instance.__setattr__(key, item[key])
+            if hasattr(instance, 'created_date'):
+                instance.__setattr__('created_date', now)
+                now += 1
+
             db.session.add(instance)
 
         db.session.commit()
@@ -42,6 +48,6 @@ class Worker:
 if __name__ == '__main__':
     worker = Worker()
     worker.insert_default_items("users", User)
-    # worker.insert_default_items("cards", Card)
+    worker.insert_default_items("cards", Card)
 
     print("=" * 50, "Database migration completed", "=" * 50)

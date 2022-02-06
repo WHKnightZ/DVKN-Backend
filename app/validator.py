@@ -63,6 +63,15 @@ class ChangePasswordValidation(Schema):
 class UserSchema(Schema):
     username = fields.String()
     is_admin = fields.Boolean()
+    avatar = fields.String()
+    level = fields.Integer()
+    exp = fields.Integer()
+    health = fields.Integer()
+    gold = fields.Integer()
+    diamond = fields.Integer()
+    barrel = fields.Integer()
+    total_battle = fields.Integer()
+    win_battle = fields.Integer()
 
 
 class BattleSchema(Schema):

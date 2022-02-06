@@ -3,7 +3,7 @@ import random
 from marshmallow import fields, validate as validate_
 from pytz import timezone
 
-from app.enums import CARD_RANK_PROBABILITIES
+# from app.enums import CARD_RANK_PROBABILITIES
 
 
 class FieldString(fields.String):

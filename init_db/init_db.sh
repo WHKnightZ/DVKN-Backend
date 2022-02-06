@@ -1,1 +1,1 @@
-export PYTHONPATH=... && C:/Users/Anonymous/miniconda3/python.exe c:/Users/Anonymous/Documents/TDHV-Backend/init_db/init_db.py
+export PYTHONPATH=... && C:/Users/Anonymous/miniconda3/python.exe c:/Users/Anonymous/Documents/DVKN-Backend/init_db/init_db.py

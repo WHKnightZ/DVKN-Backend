@@ -64,12 +64,13 @@ def register_blueprints(app):
     :param app:
     :return:
     """
-    app.register_blueprint(api_v1.manage.user.api,
+    app.register_blueprint(api_v1.manage.users.api,
                            url_prefix='/api/v1/manage/users')
-    app.register_blueprint(api_v1.manage.card.api,
+    app.register_blueprint(api_v1.manage.cards.api,
                            url_prefix='/api/v1/manage/cards')
 
-    app.register_blueprint(api_v1.upload_file.api, url_prefix='/api/v1/upload')
+    app.register_blueprint(api_v1.upload.api, url_prefix='/api/v1/upload')
     app.register_blueprint(api_v1.auth.api, url_prefix='/api/v1/auth')
-    app.register_blueprint(api_v1.user.api, url_prefix='/api/v1/users')
+    app.register_blueprint(api_v1.profile.api, url_prefix='/api/v1/profile')
     app.register_blueprint(api_v1.battle.api, url_prefix='/api/v1/battle')
+    app.register_blueprint(api_v1.cards.api, url_prefix='/api/v1/cards')

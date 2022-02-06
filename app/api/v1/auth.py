@@ -10,7 +10,7 @@ from app.api.helper import get_card_link, get_json_body, send_error, send_result
 from app.enums import MSG_INCORRECT_AUTH, MSG_USER_EXISTED
 from app.extensions import db
 from app.models import Card, User, UserCard
-from app.utils import get_timestamp_now, random_card_register
+from app.utils import random_card_register
 from app.validator import AuthValidation, UserSchema
 
 ACCESS_EXPIRES = timedelta(days=1)
@@ -33,7 +33,6 @@ def sign_up():
     if duplicated_user:
         return send_error(message_id=MSG_USER_EXISTED, message="Tài khoản đã tồn tại")
 
-    created_date = get_timestamp_now()
     deck = []
     cards = Card.query.all()
     user_cards = random_card_register(cards)
@@ -44,13 +43,14 @@ def sign_up():
         user_card_id = uuid.uuid1()
         user_card["id"] = user_card_id
         new_user_card = UserCard(id=user_card_id, username=username, card_id=card.id,
-                                 rank=rank, attack=0, defend=0, army=0)
+                                 rank=rank, attack=card.attack, defend=card.defend, army=card.army)
         db.session.add(new_user_card)
         deck.append(str(user_card_id))
 
+    avatar = get_card_link(user_cards[0]["card"].id, 0)
     deck = ",".join(deck)
-    new_user = User(username=username, password_hash=generate_password_hash(
-        password), deck=deck, created_date=created_date)
+    new_user = User(username=username, password_hash=generate_password_hash(password), deck=deck, avatar=avatar)
+
     db.session.add(new_user)
     db.session.commit()
 
@@ -61,6 +61,7 @@ def sign_up():
         "access_token": access_token,
         "refresh_token": refresh_token,
         "username": username,
+        "avatar": avatar,
         "card_images": [{"id": item["id"], "image": get_card_link(item["card"].id, item["rank"])} for item in user_cards]
     }
 

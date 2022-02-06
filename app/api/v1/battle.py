@@ -1,9 +1,10 @@
 import random
 from flask import Blueprint, request
 from flask_jwt_extended import get_jwt_identity
+from app.api.functions import get_deck
 from app.api.helper import get_card_link, get_json_body, send_error, send_result
 from app.gateway import authorization_require
-from app.models import User, UserCard
+from app.models import User
 from app.validator import BattleSchema
 from app.extensions import db
 
@@ -16,23 +17,36 @@ def random_index(cards):
     return indexes[rd]
 
 
-def get_deck(username):
-    user_cards = db.session.query(User.username, User.deck, UserCard.id, UserCard.card_id, UserCard.rank).join(
-        UserCard, User.deck.contains(UserCard.id)).filter(User.username == username).all()
+@api.route('/users', methods=['GET'])
+@authorization_require()
+def get_all_battle_users():
+    username = get_jwt_identity()
 
-    if (len(user_cards) < 5):
-        return
+    page = request.args.get('page', 1, type=int)
+    page_size = request.args.get('page_size', 12, type=int)
+    keyword = request.args.get('keyword', "", type=str)
+    keyword = f"%{keyword}%"
 
-    def find(user_card_id):
-        for user_card in user_cards:
-            if (user_card.id == user_card_id):
-                return user_card
+    all_items = User.query.filter((User.username.like(keyword)), User.is_admin == 0)
+    total = all_items.count()
 
-    deck = user_cards[0].deck.split(",")
-    new_deck = []
-    for user_card_id in deck:
-        new_deck.append(find(user_card_id))
-    return new_deck
+    # items = db.session.query(User.username, UserCard.card_id, UserCard.rank).join(UserCard, func.substring(
+    #     User.deck, 1, 36) == UserCard.id).filter((User.username.like(keyword)), User.is_admin == 0, User.username != username)\
+    #     .order_by(User.created_date.desc()).paginate(page=page, per_page=page_size,
+    #                                                  error_out=False).items
+    items = db.session.query(User.username).filter((User.username.like(keyword)), User.is_admin == 0, User.username != username)\
+        .order_by(User.created_date.desc()).paginate(page=page, per_page=page_size, error_out=False).items
+
+    results = {
+        "items": [{"username": item.username,
+                   "avatar": item.avatar,
+                   "level": item.level,
+                   "win_battle": item.win_battle,
+                   "total_battle": item.total_battle} for item in items],
+        "total": total,
+    }
+
+    return send_result(data=results)
 
 
 @api.route('', methods=['POST'])

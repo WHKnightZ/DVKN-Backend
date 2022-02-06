@@ -1,39 +1,19 @@
-from flask import Blueprint, request
-from flask_jwt_extended import get_jwt_identity
-from sqlalchemy import func
+from flask import Blueprint
 
-from app.api.helper import get_card_link, send_result
-from app.extensions import db
+from app.api.helper import send_result
 from app.gateway import authorization_require
-from app.models import User, UserCard
+from app.models import User
+from app.validator import UserSchema
 
-api = Blueprint('users', __name__)
+api = Blueprint('profile', __name__)
 
 
 @api.route('', methods=['GET'])
 @authorization_require()
-def get_all_users():
-    username = get_jwt_identity()
+def get_profile():
+    current_user = User.get_current_user()
 
-    page = request.args.get('page', 1, type=int)
-    page_size = request.args.get('page_size', 10, type=int)
-    keyword = request.args.get('keyword', "", type=str)
-    keyword = f"%{keyword}%"
-
-    all_items = User.query.filter((User.username.like(keyword)), User.is_admin == 0)
-    total = all_items.count()
-
-    items = db.session.query(User.username, UserCard.card_id, UserCard.rank).join(UserCard, func.substring(
-        User.deck, 1, 36) == UserCard.id).filter((User.username.like(keyword)), User.is_admin == 0, User.username != username)\
-        .order_by(User.created_date.desc()).paginate(page=page, per_page=page_size,
-                                                     error_out=False).items
-
-    results = {
-        "items": [{"username": item.username, "avatar": get_card_link(item.card_id, item.rank)} for item in items],
-        "total": total,
-    }
-
-    return send_result(data=results)
+    return send_result(data=UserSchema().dump(current_user))
 
 # @api.route('/profile', methods=['PUT'])
 # @authorization_require()
@@ -147,19 +127,3 @@ def get_all_users():
 #     }
 
 #     return send_result(data=data, message_id=CHANGE_PASSWORD_SUCCESSFULLY)
-
-
-# @api.route('/profile', methods=['GET'])
-# @authorization_require()
-# def get_profile():
-#     """ This api for the user get their information.
-
-#         Returns:
-
-#         Examples::
-
-#     """
-
-#     current_user = User.get_current_user()
-
-#     return send_result(data=UserSchema().dump(current_user))

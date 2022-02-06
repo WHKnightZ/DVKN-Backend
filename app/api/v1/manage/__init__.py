@@ -1,2 +1,2 @@
-from app.api.v1.manage import user
-from app.api.v1.manage import card
+from app.api.v1.manage import users
+from app.api.v1.manage import cards
