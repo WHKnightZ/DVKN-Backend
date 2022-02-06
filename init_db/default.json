@@ -10,61 +10,6 @@
   ],
   "cards": [
     {
-      "id": "ba-bau",
-      "name": "Bà Bầu",
-      "type": 0,
-      "element": 0,
-      "description": "",
-      "attack": 50,
-      "defend": 50,
-      "army": 50,
-      "probability_register": 100
-    },
-    {
-      "id": "banh-chung",
-      "name": "Bánh Chưng",
-      "type": 4,
-      "element": 2,
-      "description": "",
-      "attack": 30,
-      "defend": 30,
-      "army": 30,
-      "probability_register": 100
-    },
-    {
-      "id": "doan-thi-diem",
-      "name": "Đoàn Thị Điểm",
-      "type": 1,
-      "element": 1,
-      "description": "",
-      "attack": 10,
-      "defend": 60,
-      "army": 80,
-      "probability_register": 90
-    },
-    {
-      "id": "kiet-hon",
-      "name": "Kiệt Hồn",
-      "type": 5,
-      "element": 3,
-      "description": "",
-      "attack": 50,
-      "defend": 50,
-      "army": 50,
-      "probability_register": 100
-    },
-    {
-      "id": "ly-bi",
-      "name": "Lý Bí",
-      "type": 2,
-      "element": 2,
-      "description": "",
-      "attack": 20,
-      "defend": 55,
-      "army": 20,
-      "probability_register": 100
-    },
-    {
       "id": "ly-thuong-kiet",
       "name": "Lý Thường Kiệt",
       "type": 2,
@@ -73,50 +18,6 @@
       "attack": 30,
       "defend": 40,
       "army": 50,
-      "probability_register": 100
-    },
-    {
-      "id": "than-kinh",
-      "name": "Thần Kinh",
-      "type": 0,
-      "element": 1,
-      "description": "",
-      "attack": 10,
-      "defend": 10,
-      "army": 10,
-      "probability_register": 100
-    },
-    {
-      "id": "thuy-hon",
-      "name": "Thủy Hồn",
-      "type": 5,
-      "element": 0,
-      "description": "",
-      "attack": 50,
-      "defend": 50,
-      "army": 50,
-      "probability_register": 100
-    },
-    {
-      "id": "thuy-tinh",
-      "name": "Thủy Tinh",
-      "type": 5,
-      "element": 3,
-      "description": "Một người ở miền biển, tài năng xuất chúng: gọi gió, gió đến; hô mưa, mưa về. Người ta gọi chàng là Thủy Tinh",
-      "attack": 42,
-      "defend": 15,
-      "army": 33,
-      "probability_register": 0
-    },
-    {
-      "id": "tran-hung-dao",
-      "name": "Trần Hưng Đạo",
-      "type": 3,
-      "element": 4,
-      "description": "ảo vãilz",
-      "attack": 10,
-      "defend": 10,
-      "army": 10,
       "probability_register": 100
     }
   ]

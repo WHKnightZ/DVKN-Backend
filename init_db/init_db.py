@@ -48,6 +48,6 @@ class Worker:
 if __name__ == '__main__':
     worker = Worker()
     worker.insert_default_items("users", User)
-    worker.insert_default_items("cards", Card)
+    # worker.insert_default_items("cards", Card)
 
     print("=" * 50, "Database migration completed", "=" * 50)
