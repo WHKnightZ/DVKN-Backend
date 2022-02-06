@@ -17,9 +17,9 @@ def random_index(cards):
     return indexes[rd]
 
 
-@api.route('/users', methods=['GET'])
+@api.route('/players', methods=['GET'])
 @authorization_require()
-def get_all_battle_users():
+def get_all_battle_players():
     username = get_jwt_identity()
 
     page = request.args.get('page', 1, type=int)
@@ -34,7 +34,7 @@ def get_all_battle_users():
     #     User.deck, 1, 36) == UserCard.id).filter((User.username.like(keyword)), User.is_admin == 0, User.username != username)\
     #     .order_by(User.created_date.desc()).paginate(page=page, per_page=page_size,
     #                                                  error_out=False).items
-    items = db.session.query(User.username).filter((User.username.like(keyword)), User.is_admin == 0, User.username != username)\
+    items = db.session.query(User).filter((User.username.like(keyword)), User.is_admin == 0, User.username != username)\
         .order_by(User.created_date.desc()).paginate(page=page, per_page=page_size, error_out=False).items
 
     results = {
@@ -73,8 +73,8 @@ def battle():
         {
             "cards": [{
                 "image": get_card_link(card.card_id, card.rank),
-                "atk": random.randint(200, 400),
-                "hp": random.randint(600, 1000)
+                "atk": card.attack,
+                "hp": card.defend + card.army
             } for card in player],
             "death": 0
         } for player in players]
