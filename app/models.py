@@ -52,6 +52,8 @@ class Card(db.Model):
     defend = db.Column(INTEGER(unsigned=True), default=0)
     army = db.Column(INTEGER(unsigned=True), default=0)
     created_date = db.Column(INTEGER(unsigned=True), default=get_timestamp_now(), index=True)
+    captain_skill = db.Column(db.String(500))
+    specific_skill = db.Column(db.String(500))
 
     # Xác suất ra khi đăng ký
     probability_register = db.Column(INTEGER(unsigned=True), default=100)

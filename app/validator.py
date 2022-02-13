@@ -43,6 +43,8 @@ class CreateCardValidation(Schema):
     defend = fields.Integer(required=True)
     army = fields.Integer(required=True)
     probability_register = fields.Integer(required=True)
+    captain_skill = fields.String(required=True, validate=validate.Length(min=0, max=500))
+    specific_skill = fields.String(required=True, validate=validate.Length(min=0, max=500))
 
 
 class UpdateCardValidation(Schema):

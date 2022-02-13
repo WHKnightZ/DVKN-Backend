@@ -28,6 +28,9 @@ def create_card():
     defend = json_body.get("defend")
     army = json_body.get("army")
     probability_register = json_body.get("probability_register")
+    captain_skill = json_body.get("captain_skill")
+    specific_skill = json_body.get("specific_skill")
+
     if probability_register < 0:
         probability_register = 0
     elif probability_register > 100:
@@ -39,8 +42,8 @@ def create_card():
 
     created_date = get_timestamp_now()
 
-    new_card = Card(id=_id, name=name, created_date=created_date, type=_type, element=element, description=description,
-                    attack=attack, defend=defend, army=army, probability_register=probability_register)
+    new_card = Card(id=_id, name=name, created_date=created_date, type=_type, element=element, description=description, attack=attack,
+                    defend=defend, army=army, probability_register=probability_register, captain_skill=captain_skill, specific_skill=specific_skill)
     db.session.add(new_card)
     db.session.commit()
 
