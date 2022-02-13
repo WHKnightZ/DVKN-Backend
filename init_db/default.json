@@ -111,7 +111,7 @@
       "army": 25,
       "probability_register": 50,
       "captain_skill": "???: ???",
-      "specific_skill": "Sợ Thục Phán như bố: Giảm 999% công thủ lính nếu đối phương là An Dương Vương."
+      "specific_skill": "Tự vẫn: Nếu giặc quá mạnh, tự động nhảy xuống sông để tự chấm dứt sự sống của chính mình."
     },
     {
       "id": "trung-trac",
@@ -124,7 +124,7 @@
       "army": 30,
       "probability_register": 40,
       "captain_skill": "???: ???",
-      "specific_skill": "Sợ Thục Phán như bố: Giảm 999% công thủ lính nếu đối phương là An Dương Vương."
+      "specific_skill": "Tự vẫn: Nếu giặc quá mạnh, tự động nhảy xuống sông để tự chấm dứt sự sống của chính mình."
     },
     {
       "id": "yet-kieu",

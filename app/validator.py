@@ -33,8 +33,7 @@ class CreateUserValidation(Schema):
     password = fields.String(required=True, validate=validate.Length(min=1, max=16))
 
 
-class CreateCardValidation(Schema):
-    id = fields.String(required=True, validate=validate.Length(min=1, max=50))
+class UpdateCardValidation(Schema):
     name = fields.String(required=True, validate=validate.Length(min=1, max=50))
     type = fields.Integer(required=True)
     element = fields.Integer(required=True)
@@ -47,15 +46,8 @@ class CreateCardValidation(Schema):
     specific_skill = fields.String(required=True, validate=validate.Length(min=0, max=500))
 
 
-class UpdateCardValidation(Schema):
-    name = fields.String(required=True, validate=validate.Length(min=1, max=50))
-    type = fields.Integer(required=True)
-    element = fields.Integer(required=True)
-    description = fields.String(required=True, validate=validate.Length(min=0, max=500))
-    attack = fields.Integer(required=True)
-    defend = fields.Integer(required=True)
-    army = fields.Integer(required=True)
-    probability_register = fields.Integer(required=True)
+class CreateCardValidation(UpdateCardValidation):
+    id = fields.String(required=True, validate=validate.Length(min=1, max=50))
 
 
 class ChangePasswordValidation(Schema):

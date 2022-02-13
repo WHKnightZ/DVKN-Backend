@@ -89,6 +89,14 @@ def get_all_users():
     return send_result(data=results)
 
 
+@api.route('/<username>', methods=['GET'])
+@authorization_require()
+def get_user_by_id(username):
+    user = User.get_by_id(username)
+
+    return send_result(data=UserSchema().dump(user))
+
+
 @api.route('/<username>/add-card', methods=['POST'])
 @authorization_require()
 def create_user(username):
