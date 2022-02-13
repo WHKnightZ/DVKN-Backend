@@ -76,3 +76,8 @@ class UserSchema(Schema):
 
 class BattleSchema(Schema):
     username = fields.String(required=True, validate=validate.Length(min=1, max=36))
+
+
+class AddUserCardValidation(Schema):
+    card_id = fields.String(required=True, validate=validate.Length(min=1, max=50))
+    rank = fields.Integer(required=True)

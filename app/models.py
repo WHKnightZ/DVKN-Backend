@@ -3,6 +3,7 @@ from email.policy import default
 from flask_jwt_extended import get_jwt_identity
 from sqlalchemy import ForeignKey
 from sqlalchemy.dialects.mysql import INTEGER
+from app.enums import CARD_RANK_BY_LEVEL
 
 from app.extensions import db
 from app.utils import get_timestamp_now
@@ -58,6 +59,10 @@ class Card(db.Model):
     @classmethod
     def get_by_id(cls, _id):
         return cls.query.get(_id)
+
+    def get_attributes_at_rank(self, rank):
+        level = CARD_RANK_BY_LEVEL * rank + 1
+        return self.attack * level, self.defend * level, self.army * level
 
 
 class UserCard(db.Model):

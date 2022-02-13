@@ -1,4 +1,5 @@
 # coding=utf-8
+from datetime import timedelta
 
 ADMIN_ROUTE = "/manage/"
 
@@ -19,3 +20,6 @@ MSG_DELETE_SUCCESS = "5"
 MSG_UPDATE_SUCCESS = "6"
 MSG_OUT_OF_BARREL = "7"
 MSG_CARD_MAX_LEVEL = "8"
+
+ACCESS_EXPIRES = timedelta(days=30)
+REFRESH_EXPIRES = timedelta(days=90)

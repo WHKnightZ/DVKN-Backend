@@ -1,4 +1,3 @@
-from datetime import timedelta
 import uuid
 
 from flask import Blueprint, request
@@ -7,14 +6,11 @@ from flask_jwt_extended import (create_access_token, create_refresh_token,
 from werkzeug.security import check_password_hash, generate_password_hash
 
 from app.api.helper import get_card_link, get_json_body, send_error, send_result
-from app.enums import MSG_INCORRECT_AUTH, MSG_USER_EXISTED
+from app.enums import ACCESS_EXPIRES, MSG_INCORRECT_AUTH, MSG_USER_EXISTED, REFRESH_EXPIRES
 from app.extensions import db
 from app.models import Card, User, UserCard
 from app.utils import random_card_register
 from app.validator import AuthValidation, UserSchema
-
-ACCESS_EXPIRES = timedelta(days=1)
-REFRESH_EXPIRES = timedelta(days=5)
 
 api = Blueprint('auth', __name__)
 
