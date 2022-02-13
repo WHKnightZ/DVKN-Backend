@@ -83,7 +83,8 @@ def get_card_by_id(card_id):
     return send_result(data={"id": item.id, "name": item.name, "type": item.type,
                              "element": item.element, "thumbnail": get_card_link(item.id, "thumbnail"),
                              "description": item.description, "attack": item.attack, "defend": item.defend,
-                             "army": item.army, "probability_register": item.probability_register})
+                             "army": item.army, "probability_register": item.probability_register,
+                             "captain_skill": item.captain_skill, "specific_skill": item.specific_skill})
 
 
 @api.route('/<card_id>', methods=['PUT'])
@@ -103,6 +104,9 @@ def update_card(card_id):
     defend = json_body.get("defend")
     army = json_body.get("army")
     probability_register = json_body.get("probability_register")
+    captain_skill = json_body.get("captain_skill")
+    specific_skill = json_body.get("specific_skill")
+
     if probability_register < 0:
         probability_register = 0
     elif probability_register > 100:
@@ -120,6 +124,8 @@ def update_card(card_id):
     card.defend = defend
     card.army = army
     card.probability_register = probability_register
+    card.captain_skill = captain_skill
+    card.specific_skill = specific_skill
 
     db.session.commit()
 
