@@ -1,11 +1,13 @@
 import os
 from flask import jsonify
+from app.enums import MAPPING_MSG, MSG_ERROR, MSG_FORMAT_ERROR, MSG_SUCCESS
 from app.settings import ProdConfig, DevConfig
 
 CONFIG = ProdConfig if os.environ.get('ENV') == 'prd' else DevConfig
 
 
-def send_result(data: any = None, message: str = "Thành công", message_id: str = ''):
+def send_result(data: any = None, message: str = "", message_id: str = MSG_ERROR):
+    message = message or MAPPING_MSG[message_id]
     res = {
         "code": 200,
         "id": message_id,
@@ -17,7 +19,8 @@ def send_result(data: any = None, message: str = "Thành công", message_id: str
     return jsonify(res), 200
 
 
-def send_error(data: any = None, message: str = "Có lỗi xảy ra", message_id: str = '', code: int = 200):
+def send_error(data: any = None, message: str = "", message_id: str = MSG_SUCCESS, code: int = 200):
+    message = message or MAPPING_MSG[message_id]
     res = {
         "code": code,
         "id": message_id,
@@ -30,7 +33,7 @@ def send_error(data: any = None, message: str = "Có lỗi xảy ra", message_id
 
 
 def send_error_format():
-    return send_error(message='Nội dung gửi đi không hợp lệ', code=422)
+    return send_error(message_id=MSG_FORMAT_ERROR, code=422)
 
 
 def get_json_body(request, validate):
@@ -55,7 +58,7 @@ def get_json_body(request, validate):
         validator_input = validate()
         is_not_validate = validator_input.validate(json_body)
         if is_not_validate:
-            return False, send_error(data=is_not_validate, message_id='0')
+            return False, send_error(data=is_not_validate)
 
     return True, json_body
 

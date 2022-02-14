@@ -3,6 +3,7 @@ from flask import Blueprint, request
 from flask_jwt_extended import get_jwt_identity
 from app.api.functions import get_deck
 from app.api.helper import get_card_link, get_json_body, send_error, send_result
+from app.enums import MSG_FORMAT_ERROR
 from app.gateway import authorization_require
 from app.models import User
 from app.validator import BattleSchema
@@ -65,7 +66,7 @@ def battle():
     defender_cards = get_deck(defender)
 
     if not attacker_cards or not defender_cards:
-        return send_error(message="Thông tin không hợp lệ")
+        return send_error(message_id=MSG_FORMAT_ERROR)
 
     players = [attacker_cards, defender_cards]
 

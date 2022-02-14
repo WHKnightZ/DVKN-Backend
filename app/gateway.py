@@ -6,7 +6,7 @@ from flask_jwt_extended import (
 )
 
 from app.api.helper import send_error
-from app.enums import ADMIN_ROUTE
+from app.enums import ADMIN_ROUTE, MSG_AUTH_ERROR
 
 
 def authorization_require():
@@ -27,7 +27,7 @@ def authorization_require():
                 claims = get_jwt_claims()
                 is_admin = claims.get("is_admin")
                 if not is_admin:
-                    return send_error(message='Bạn không có quyền truy cập')
+                    return send_error(message_id=MSG_AUTH_ERROR)
 
             return fn(*args, **kwargs)
 

@@ -38,7 +38,7 @@ def create_card():
 
     duplicated = Card.get_by_id(_id)
     if duplicated:
-        return send_error(message_id=MSG_CARD_EXISTED, message="Thẻ bài đã tồn tại")
+        return send_error(message_id=MSG_CARD_EXISTED)
 
     created_date = get_timestamp_now()
 
@@ -78,7 +78,7 @@ def get_all_cards():
 def get_card_by_id(card_id):
     item = Card.get_by_id(card_id)
     if not item:
-        return send_error(message_id=MSG_CARD_NOT_EXISTED, message="Thẻ bài không tồn tại")
+        return send_error(message_id=MSG_CARD_NOT_EXISTED)
 
     return send_result(data={"id": item.id, "name": item.name, "type": item.type,
                              "element": item.element, "thumbnail": get_card_link(item.id, "thumbnail"),
@@ -114,7 +114,7 @@ def update_card(card_id):
 
     card: Card = Card.get_by_id(card_id)
     if card is None:
-        return send_error(message_id=MSG_CARD_NOT_EXISTED, message="Thẻ bài không tồn tại")
+        return send_error(message_id=MSG_CARD_NOT_EXISTED)
 
     card.name = name
     card.type = _type
@@ -137,7 +137,7 @@ def update_card(card_id):
 def delete_card(card_id):
     card = Card.query.filter(Card.id == card_id).first()
     if not card:
-        return send_error(message_id=MSG_CARD_NOT_EXISTED, message="Thẻ bài không tồn tại")
+        return send_error(message_id=MSG_CARD_NOT_EXISTED)
     try:
         Card.query.filter(Card.id == card_id).delete()
         db.session.commit()

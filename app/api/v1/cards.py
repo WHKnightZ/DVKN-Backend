@@ -2,7 +2,7 @@ from flask import Blueprint, request
 from flask_jwt_extended import get_jwt_identity
 from app.api.functions import get_deck
 from app.api.helper import get_card_link, send_error, send_result
-from app.enums import CARD_LEVEL_MAX, CARD_RANK_BY_LEVEL, MSG_CARD_MAX_LEVEL, MSG_OUT_OF_BARREL
+from app.enums import CARD_LEVEL_MAX, CARD_RANK_BY_LEVEL, MSG_CARD_MAX_LEVEL, MSG_CARD_NOT_EXISTED, MSG_OUT_OF_BARREL
 from app.gateway import authorization_require
 from app.models import Card, User, UserCard
 from app.extensions import db
@@ -66,7 +66,7 @@ def get_user_card(user_card_id):
     card = UserCard.query.filter(UserCard.username == username, UserCard.id == user_card_id).first()
 
     if not card:
-        return send_error(message="Thẻ bài không tồn tại")
+        return send_error(message_id=MSG_CARD_NOT_EXISTED)
 
     user = User.get_by_id(username)
     deck = user.deck.split(",")
@@ -89,7 +89,7 @@ def upgrage_user_card(user_card_id):
     user_card = UserCard.query.filter(UserCard.username == username, UserCard.id == user_card_id).first()
 
     if not user_card:
-        return send_error(message="Thẻ bài không tồn tại")
+        return send_error(message_id=MSG_CARD_NOT_EXISTED)
 
     card = Card.get_by_id(user_card.card_id)
 
@@ -119,6 +119,6 @@ def upgrage_user_card(user_card_id):
 
             return send_result(data=new_card)
 
-        return send_error(message_id=MSG_CARD_MAX_LEVEL, message="Đã đạt cấp tối đa")
+        return send_error(message_id=MSG_CARD_MAX_LEVEL)
 
-    return send_error(message_id=MSG_OUT_OF_BARREL, message="Không đủ vò rượu")
+    return send_error(message_id=MSG_OUT_OF_BARREL)

@@ -27,7 +27,7 @@ def sign_up():
     password = json_body.get("password")
     duplicated_user = User.query.filter(User.username == username).first()
     if duplicated_user:
-        return send_error(message_id=MSG_USER_EXISTED, message="Tài khoản đã tồn tại")
+        return send_error(message_id=MSG_USER_EXISTED)
 
     deck = []
     cards = Card.query.all()
@@ -78,7 +78,7 @@ def sign_in():
 
     user = User.query.filter(User.username == username).first()
     if user is None or (password and not check_password_hash(user.password_hash, password)):
-        return send_error(message_id=MSG_INCORRECT_AUTH, message="Sai tài khoản hoặc mật khẩu")
+        return send_error(message_id=MSG_INCORRECT_AUTH)
 
     access_token = create_access_token(identity=user.username, expires_delta=ACCESS_EXPIRES,
                                        user_claims={"is_admin": user.is_admin})
@@ -89,7 +89,7 @@ def sign_in():
     data.setdefault('access_token', access_token)
     data.setdefault('refresh_token', refresh_token)
 
-    return send_result(data=data, message="Ok")
+    return send_result(data=data)
 
 
 @api.route('/refresh', methods=['POST'])
