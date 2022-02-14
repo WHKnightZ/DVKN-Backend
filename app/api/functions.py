@@ -1,5 +1,5 @@
 from app.models import User, UserCard
-from app.extensions import db
+from app.extensions import db, user_healths
 
 
 def get_deck(username):
@@ -20,3 +20,13 @@ def get_deck(username):
     for user_card_id in deck:
         new_deck.append(find(user_card_id))
     return new_deck
+
+
+def get_user_health(username):
+    health, max_health = user_healths.get(username, None)
+
+    if health is None:
+        health = User.get_by_id(username).health
+        user_healths[username] = health
+
+    return health
