@@ -6,7 +6,7 @@ from app.settings import ProdConfig, DevConfig
 CONFIG = ProdConfig if os.environ.get('ENV') == 'prd' else DevConfig
 
 
-def send_result(data: any = None, message: str = "", message_id: str = MSG_ERROR):
+def send_result(data: any = None, message: str = "", message_id: str = MSG_SUCCESS):
     message = message or MAPPING_MSG[message_id]
     res = {
         "code": 200,
@@ -19,7 +19,7 @@ def send_result(data: any = None, message: str = "", message_id: str = MSG_ERROR
     return jsonify(res), 200
 
 
-def send_error(data: any = None, message: str = "", message_id: str = MSG_SUCCESS, code: int = 200):
+def send_error(data: any = None, message: str = "", message_id: str = MSG_ERROR, code: int = 200):
     message = message or MAPPING_MSG[message_id]
     res = {
         "code": code,

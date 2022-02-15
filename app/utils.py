@@ -2,8 +2,10 @@ import datetime
 import random
 from marshmallow import fields, validate as validate_
 from pytz import timezone
-
 # from app.enums import CARD_RANK_PROBABILITIES
+
+
+time_zon_sg = timezone('Asia/Ho_Chi_Minh')
 
 
 class FieldString(fields.String):
@@ -59,7 +61,6 @@ def get_datetime_now() -> datetime:
         Returns:
             current datetime
     """
-    time_zon_sg = timezone('Asia/Ho_Chi_Minh')
     return datetime.datetime.now(time_zon_sg)
 
 
@@ -68,7 +69,6 @@ def get_timestamp_now() -> int:
         Returns:
             current time in timestamp
     """
-    time_zon_sg = timezone('Asia/Ho_Chi_Minh')
     return int(datetime.datetime.now(time_zon_sg).timestamp())
 
 

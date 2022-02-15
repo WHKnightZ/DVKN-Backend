@@ -1,9 +1,9 @@
 import random
 from flask import Blueprint, request
 from flask_jwt_extended import get_jwt_identity
-from app.api.functions import get_deck
+from app.api.functions import get_deck, user_lose_health
 from app.api.helper import get_card_link, get_json_body, send_error, send_result
-from app.enums import MSG_FORMAT_ERROR
+from app.enums import LOSE_HEALTH_BATTLE, MSG_FORMAT_ERROR, MSG_NOT_ENOUGH_HEALTH
 from app.gateway import authorization_require
 from app.models import User
 from app.validator import BattleSchema
@@ -67,6 +67,11 @@ def battle():
 
     if not attacker_cards or not defender_cards:
         return send_error(message_id=MSG_FORMAT_ERROR)
+
+    status, _ = user_lose_health(attacker, LOSE_HEALTH_BATTLE)
+
+    if not status:
+        return send_error(message_id=MSG_NOT_ENOUGH_HEALTH)
 
     players = [attacker_cards, defender_cards]
 

@@ -1,4 +1,5 @@
 from flask import Blueprint
+from app.api.functions import get_time_full_health
 
 from app.api.helper import send_result
 from app.gateway import authorization_require
@@ -12,5 +13,10 @@ api = Blueprint('profile', __name__)
 @authorization_require()
 def get_profile():
     current_user = User.get_current_user()
+    dumped_user = UserSchema().dump(current_user)
 
-    return send_result(data=UserSchema().dump(current_user))
+    current_health, max_health, full_health_time = get_time_full_health(current_user.username)
+    dumped_user = {**dumped_user, "current_health": current_health,
+                   "max_health": max_health, "full_health_time": full_health_time}
+
+    return send_result(data=dumped_user)

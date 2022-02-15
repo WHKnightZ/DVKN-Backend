@@ -25,6 +25,7 @@ MSG_UPDATE_SUCCESS = "6"
 MSG_OUT_OF_BARREL = "7"
 MSG_CARD_MAX_LEVEL = "8"
 MSG_USER_NOT_EXISTED = "9"
+MSG_NOT_ENOUGH_HEALTH = "10"
 
 MAPPING_MSG = {
     MSG_ERROR: "Có lỗi xảy ra",
@@ -39,8 +40,16 @@ MAPPING_MSG = {
     MSG_UPDATE_SUCCESS: "Sửa thành công",
     MSG_OUT_OF_BARREL: "Không đủ vò rượu",
     MSG_CARD_MAX_LEVEL: "Đã đạt cấp tối đa",
-    MSG_USER_NOT_EXISTED: "Tài khoản không tồn tại"
+    MSG_USER_NOT_EXISTED: "Tài khoản không tồn tại",
+    MSG_NOT_ENOUGH_HEALTH: "Không đủ sức khỏe"
 }
 
 ACCESS_EXPIRES = timedelta(days=30)
 REFRESH_EXPIRES = timedelta(days=90)
+
+HEALTH_INTERVAL = 30
+HEALTH_INCREASE = 5
+
+LOSE_HEALTH_BATTLE = 5
+LOSE_HEALTH_MISSION = 3
+LOSE_HEALTH_BOSS = 10

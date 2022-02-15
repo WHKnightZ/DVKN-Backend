@@ -14,6 +14,6 @@ if os.environ.get('ENV') == 'prd':
 
 # Lưu sức khỏe của user với key là username, nếu key rỗng nghĩa là sức khỏe full
 # user_healths = {
-#     khanh.nguyen: (health, max_health)
+#     khanh.nguyen: (health, max_health, last_time)
 # }
 user_healths = {}
