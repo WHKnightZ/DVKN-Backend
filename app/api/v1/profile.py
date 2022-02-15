@@ -15,8 +15,8 @@ def get_profile():
     current_user = User.get_current_user()
     dumped_user = UserSchema().dump(current_user)
 
-    current_health, max_health, full_health_time = get_time_full_health(current_user.username)
+    current_health, max_health, full_health_seconds, full_health_timestamp = get_time_full_health(current_user.username)
     dumped_user = {**dumped_user, "current_health": current_health,
-                   "max_health": max_health, "full_health_time": full_health_time}
+                   "max_health": max_health, "full_health_seconds": full_health_seconds, "full_health_timestamp": full_health_timestamp}
 
     return send_result(data=dumped_user)

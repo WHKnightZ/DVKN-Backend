@@ -40,7 +40,7 @@ def update_user_health(username):
         if increase > 0:
             current_health += increase * HEALTH_INCREASE
             current_health = min(current_health, max_health)
-            last_time += increase * HEALTH_INCREASE
+            last_time += increase * HEALTH_INTERVAL
 
     user_healths[username] = (current_health, max_health, last_time)
 
@@ -58,9 +58,9 @@ def get_time_full_health(username):
         interval = math.ceil((max_health - current_health) / HEALTH_INCREASE)
         interval *= HEALTH_INTERVAL
         interval += last_time - now
-        return (current_health, max_health, interval)
+        return (current_health, max_health, interval, now + interval)
     else:
-        return (current_health, max_health, 0)
+        return (current_health, max_health, 0, now)
 
 
 def user_lose_health(username, health):
