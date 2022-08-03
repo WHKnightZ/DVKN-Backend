@@ -9,7 +9,7 @@ from app.utils import get_timestamp_now
 
 CONFIG = ProdConfig if os.environ.get('ENV') == 'prd' else DevConfig
 
-default_file = "init_db/default.json"
+default_file = "default.json"
 
 
 class Worker:

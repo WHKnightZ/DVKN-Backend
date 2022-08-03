@@ -82,3 +82,16 @@ class UserCard(db.Model):
     @classmethod
     def get_by_id(cls, _id):
         return cls.query.get(_id)
+
+
+class Layout(db.Model):
+    __tablename__ = 'layout'
+
+    id = db.Column(db.String(36), primary_key=True)
+    title = db.Column(db.String(100))
+    data = db.Column(db.String(5000))
+    created_date = db.Column(INTEGER(unsigned=True), default=get_timestamp_now(), index=True)
+
+    @classmethod
+    def get_by_id(cls, _id):
+        return cls.query.get(_id)

@@ -75,3 +75,4 @@ def register_blueprints(app):
     app.register_blueprint(api_v1.battle.api, url_prefix='/api/v1/battle')
     app.register_blueprint(api_v1.cards.api, url_prefix='/api/v1/cards')
     app.register_blueprint(api_v1.test.api, url_prefix='/api/v1/test')
+    app.register_blueprint(api_v1.layouts.api, url_prefix='/api/v1/layouts')
