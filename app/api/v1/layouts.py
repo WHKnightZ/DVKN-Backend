@@ -21,9 +21,13 @@ def create_layout():
     _id = uuid1()
     title = json_body.get("title")
     data = json_body.get("data")
+    x = json_body.get("x")
+    y = json_body.get("y")
+
     created_date = get_timestamp_now()
 
-    new_layout = Layout(id=_id, title=title, data=data, created_date=created_date)
+    new_layout = Layout(id=_id, title=title, data=data, x=x, y=y,
+                        created_date=created_date)
     db.session.add(new_layout)
     db.session.commit()
 
@@ -44,7 +48,8 @@ def get_all_layouts():
         .paginate(page=page, per_page=page_size, error_out=False).items
 
     results = {
-        "items": [{"id": item.id, "title": item.title, "data": item.data} for item in items],
+        "items": [{"id": item.id, "title": item.title, "data": item.data, "x": item.x, "y": item.y,
+                   "created_date": item.created_date} for item in items],
         "total": total,
     }
 
@@ -57,7 +62,8 @@ def get_layout_by_id(layout_id):
     if not item:
         return send_error()
 
-    return send_result(data={"id": item.id, "title": item.title, "data": item.data})
+    return send_result(data={"id": item.id, "title": item.title, "data": item.data, "x": item.x, "y": item.y,
+                             "created_date": item.created_date})
 
 
 @api.route('/<layout_id>', methods=['PUT'])

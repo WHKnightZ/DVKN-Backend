@@ -90,6 +90,8 @@ class Layout(db.Model):
     id = db.Column(db.String(36), primary_key=True)
     title = db.Column(db.String(100))
     data = db.Column(db.String(5000))
+    x = db.Column(INTEGER(unsigned=True), default=2)
+    y = db.Column(INTEGER(unsigned=True), default=1)
     created_date = db.Column(INTEGER(unsigned=True), default=get_timestamp_now(), index=True)
 
     @classmethod
