@@ -139,5 +139,95 @@
       "captain_skill": "???: ???",
       "specific_skill": "Sợ Thục Phán như bố: Giảm 999% công thủ lính nếu đối phương là An Dương Vương."
     }
+  ],
+  "layouts": [
+    {
+      "created_date": 1659673360,
+      "data": "[{\"item\":[{\"w\":6,\"h\":3,\"x\":0,\"y\":0,\"i\":\"j1bjba\",\"type\":\"WIDGET_TCHC\",\"moved\":false,\"static\":false},{\"w\":6,\"h\":3,\"x\":6,\"y\":0,\"i\":\"xz5lwq\",\"type\":\"WIDGET_TTLDCQCDP\",\"moved\":false,\"static\":false}],\"title\":\"Tiêu đề fmavgp\",\"layout\":{\"w\":6,\"h\":16,\"i\":\"c9guwd\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề aoousx\",\"layout\":{\"w\":6,\"h\":16,\"i\":\"j3hjji\",\"x\":6,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
+      "id": "3ea2bb62-1476-11ed-b71e-0af47d593c6e",
+      "title": "co' cai' dau` pui`",
+      "x": 2,
+      "y": 1
+    },
+    {
+      "created_date": 1659673344,
+      "data": "[{\"item\":[],\"title\":\"bo. cac\",\"layout\":{\"w\":6,\"h\":16,\"i\":\"v5t7yt\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề fx2j3q\",\"layout\":{\"w\":6,\"h\":16,\"i\":\"put50f\",\"x\":6,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
+      "id": "34f081f8-1476-11ed-b71e-0af47d593c6e",
+      "title": "dmm quy' buu",
+      "x": 2,
+      "y": 1
+    },
+    {
+      "created_date": 1659673334,
+      "data": "[{\"item\":[],\"title\":\"Tiêu đề jggtm4\",\"layout\":{\"w\":6,\"h\":16,\"i\":\"v5t7yt\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề fx2j3q\",\"layout\":{\"w\":6,\"h\":16,\"i\":\"put50f\",\"x\":6,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
+      "id": "2f40dd98-1476-11ed-b71e-0af47d593c6e",
+      "title": "dmm quy' buu",
+      "x": 2,
+      "y": 1
+    },
+    {
+      "created_date": 1659673325,
+      "data": "[{\"item\":[],\"title\":\"Tiêu đề 9isq2u\",\"layout\":{\"w\":6,\"h\":16,\"i\":\"b5xuis\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề rq4yd3\",\"layout\":{\"w\":6,\"h\":16,\"i\":\"vggmth\",\"x\":6,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
+      "id": "29774b22-1476-11ed-b71e-0af47d593c6e",
+      "title": "Bố cục mẫu 12132143",
+      "x": 2,
+      "y": 1
+    },
+    {
+      "created_date": 1659670914,
+      "data": "[{\"item\":[],\"title\":\"Tiêu đề h4sj16\",\"layout\":{\"w\":6,\"h\":16,\"i\":\"xwjq85\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề mh9ly2\",\"layout\":{\"w\":6,\"h\":16,\"i\":\"g89vo9\",\"x\":6,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
+      "id": "8c7a47ac-1470-11ed-b71e-0af47d593c6e",
+      "title": "doi` nhu cc",
+      "x": 2,
+      "y": 1
+    },
+    {
+      "created_date": 1659670906,
+      "data": "[{\"item\":[],\"title\":\"Tiêu đề xzgul5\",\"layout\":{\"w\":6,\"h\":16,\"i\":\"3y40lm\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề 628fjy\",\"layout\":{\"w\":6,\"h\":16,\"i\":\"dvauic\",\"x\":6,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
+      "id": "87bfcd40-1470-11ed-b71e-0af47d593c6e",
+      "title": "dm cuoc doi`",
+      "x": 2,
+      "y": 1
+    },
+    {
+      "created_date": 1659670880,
+      "data": "[{\"item\":[{\"w\":6,\"h\":3,\"x\":0,\"y\":0,\"i\":\"jbzpss\",\"type\":\"WIDGET_TCHC\",\"moved\":false,\"static\":false},{\"w\":6,\"h\":3,\"x\":6,\"y\":0,\"i\":\"jkyt9p\",\"type\":\"WIDGET_TTLDCQCDP\",\"moved\":false,\"static\":false}],\"title\":\"Tiêu đề o4ffzm\",\"layout\":{\"w\":6,\"h\":16,\"i\":\"tj47wk\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[{\"w\":6,\"h\":3,\"x\":0,\"y\":0,\"i\":\"21eh83\",\"type\":\"WIDGET_TTLDCQCDP\",\"moved\":false,\"static\":false}],\"title\":\"Tiêu đề o9wtsf\",\"layout\":{\"w\":6,\"h\":16,\"i\":\"ppbxcb\",\"x\":6,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
+      "id": "78495ac0-1470-11ed-b71e-0af47d593c6e",
+      "title": "Bố cục giống với design",
+      "x": 2,
+      "y": 1
+    },
+    {
+      "created_date": 1659670858,
+      "data": "[{\"item\":[{\"w\":6,\"h\":3,\"x\":0,\"y\":0,\"i\":\"er2lbt\",\"type\":\"WIDGET_TTLDCQCDP\",\"moved\":false,\"static\":false},{\"w\":6,\"h\":3,\"x\":6,\"y\":0,\"i\":\"boolzt\",\"type\":\"WIDGET_TCHC\",\"moved\":false,\"static\":false},{\"w\":6,\"h\":3,\"x\":0,\"y\":3,\"i\":\"1h3fcg\",\"type\":\"WIDGET_TTLDCQCDP\",\"moved\":false,\"static\":false},{\"w\":6,\"h\":3,\"x\":6,\"y\":3,\"i\":\"ro7f1c\",\"type\":\"WIDGET_TCHC\",\"moved\":false,\"static\":false}],\"title\":\"Tiêu đề 3tjdko\",\"layout\":{\"w\":12,\"h\":22,\"i\":\"nw4f3j\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
+      "id": "6ae88946-1470-11ed-b71e-0af47d593c6e",
+      "title": "Bố cục bu`i`",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "created_date": 1659670839,
+      "data": "[{\"item\":[],\"title\":\"Tiêu đề mamtgz\",\"layout\":{\"w\":2,\"h\":16,\"i\":\"hcn07e\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề 3fq9nn\",\"layout\":{\"w\":2,\"h\":16,\"i\":\"2pwu3a\",\"x\":2,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề j11v02\",\"layout\":{\"w\":2,\"h\":16,\"i\":\"4y1pee\",\"x\":4,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề scl7b5\",\"layout\":{\"w\":2,\"h\":16,\"i\":\"alwgd2\",\"x\":6,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề ny4gtm\",\"layout\":{\"w\":2,\"h\":16,\"i\":\"05y6gz\",\"x\":8,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề 2q8xk0\",\"layout\":{\"w\":2,\"h\":16,\"i\":\"nh0wc6\",\"x\":10,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề 0yix7g\",\"layout\":{\"w\":2,\"h\":16,\"i\":\"aju9t3\",\"x\":0,\"y\":16,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề husnfl\",\"layout\":{\"w\":2,\"h\":16,\"i\":\"1w71bs\",\"x\":2,\"y\":16,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề mbw2ut\",\"layout\":{\"w\":2,\"h\":16,\"i\":\"smckyk\",\"x\":4,\"y\":16,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề sumxxa\",\"layout\":{\"w\":2,\"h\":16,\"i\":\"qpur46\",\"x\":6,\"y\":16,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
+      "id": "5fc76cc6-1470-11ed-b71e-0af47d593c6e",
+      "title": "Bố cục mẫu 5 x 2",
+      "x": 5,
+      "y": 2
+    },
+    {
+      "created_date": 1659670818,
+      "data": "[{\"item\":[],\"title\":\"Tiêu đề 5ontx0\",\"layout\":{\"w\":12,\"h\":16,\"i\":\"orfwnb\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
+      "id": "536f59d4-1470-11ed-b71e-0af47d593c6e",
+      "title": "Full màn",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "created_date": 1659670817,
+      "data": "[{\"item\":[],\"title\":\"Tiêu đề 5ontx0\",\"layout\":{\"w\":12,\"h\":16,\"i\":\"orfwnb\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
+      "id": "536f59d3-1470-11ed-b71e-0af47d593c6e",
+      "title": "Test trang 2",
+      "x": 1,
+      "y": 1
+    }
   ]
 }

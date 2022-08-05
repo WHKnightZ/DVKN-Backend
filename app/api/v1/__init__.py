@@ -6,3 +6,4 @@ from app.api.v1 import battle
 from app.api.v1 import cards
 from app.api.v1 import test
 from app.api.v1 import layouts
+from app.api.v1 import layers
