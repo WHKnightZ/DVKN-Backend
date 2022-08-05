@@ -100,4 +100,15 @@ def delete_layout(layout_id):
     except Exception as ex:
         return send_error(message=str(ex))
 
+
+@api.route('/delete', methods=['POST'])
+def delete_layouts():
+    json_req = request.get_json()
+
+    try:
+        Layout.query.filter(Layout.id.in_(json_req)).delete()
+        db.session.commit()
+    except Exception as ex:
+        return send_error(message=str(ex))
+
     return send_result()
