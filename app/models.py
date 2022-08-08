@@ -112,3 +112,17 @@ class Layer(db.Model):
     @classmethod
     def get_by_id(cls, _id):
         return cls.query.get(_id)
+
+
+class Point(db.Model):
+    __tablename__ = 'point'
+
+    id = db.Column(db.String(36), primary_key=True)
+    name = db.Column(db.String(100))
+    layer_id = db.Column(ForeignKey('layer.id', ondelete='CASCADE', onupdate='CASCADE'), nullable=False)
+    data = db.Column(db.String(5000))
+    created_date = db.Column(INTEGER(unsigned=True), default=get_timestamp_now(), index=True)
+
+    @classmethod
+    def get_by_id(cls, _id):
+        return cls.query.get(_id)
