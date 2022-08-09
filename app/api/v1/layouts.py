@@ -44,7 +44,7 @@ def get_all_layouts():
     all_items = Layout.query.filter(Layout.title.like(keyword))
     total = all_items.count()
 
-    items = Layout.query.filter(Layout.title.like(keyword)).order_by(Layout.created_date.desc()) \
+    items = all_items.order_by(Layout.created_date.desc()) \
         .paginate(page=page, per_page=page_size, error_out=False).items
 
     results = {

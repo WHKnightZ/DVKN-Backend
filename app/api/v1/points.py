@@ -43,11 +43,16 @@ def get_all_points():
     page_size = request.args.get('page_size', 10, type=int)
     keyword = request.args.get('keyword', "", type=str)
     keyword = f"%{keyword}%"
+    layer_id = request.args.get('layer_id', None)
 
     all_items = Point.query.filter(Point.name.like(keyword))
+
+    if layer_id:
+        all_items = all_items.filter(Point.layer_id == layer_id)
+
     total = all_items.count()
 
-    items = Point.query.filter(Point.name.like(keyword)).order_by(Point.created_date.desc()) \
+    items = all_items.order_by(Point.created_date.desc()) \
         .paginate(page=page, per_page=page_size, error_out=False).items
 
     results = {

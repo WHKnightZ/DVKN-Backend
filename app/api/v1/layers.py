@@ -44,7 +44,7 @@ def get_all_layers():
     all_items = Layer.query.filter(Layer.name.like(keyword))
     total = all_items.count()
 
-    items = Layer.query.filter(Layer.name.like(keyword)).order_by(Layer.created_date.desc()) \
+    items = all_items.order_by(Layer.created_date.desc()) \
         .paginate(page=page, per_page=page_size, error_out=False).items
 
     results = {
