@@ -2,7 +2,9 @@
 from email.policy import default
 from flask_jwt_extended import get_jwt_identity
 from sqlalchemy import ForeignKey
-from sqlalchemy.dialects.mysql import INTEGER
+from sqlalchemy.dialects.mysql import INTEGER, FLOAT
+from sqlalchemy.orm import relationship
+
 from app.enums import CARD_RANK_BY_LEVEL
 
 from app.extensions import db
@@ -120,8 +122,12 @@ class Point(db.Model):
     id = db.Column(db.String(36), primary_key=True)
     name = db.Column(db.String(100))
     layer_id = db.Column(ForeignKey('layer.id', ondelete='CASCADE', onupdate='CASCADE'), nullable=False)
+    long = db.Column(FLOAT(), default=0.0)
+    lat = db.Column(FLOAT(), default=0.0)
+    content = db.Column(db.String(500))
     data = db.Column(db.String(5000))
     created_date = db.Column(INTEGER(unsigned=True), default=get_timestamp_now(), index=True)
+    layer = relationship('Layer', primaryjoin='Layer.id == Point.layer_id')
 
     @classmethod
     def get_by_id(cls, _id):

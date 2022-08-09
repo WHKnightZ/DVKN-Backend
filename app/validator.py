@@ -75,3 +75,23 @@ class BattleSchema(Schema):
 class AddUserCardValidation(Schema):
     card_id = fields.String(required=True, validate=validate.Length(min=1, max=50))
     rank = fields.Integer(required=True)
+
+
+class LayerSchema(Schema):
+    id = fields.String()
+    name = fields.String()
+    icon = fields.String()
+    content = fields.String()
+    form = fields.String()
+    created_date = fields.Integer()
+
+
+class PointSchema(Schema):
+    id = fields.String()
+    name = fields.String()
+    long = fields.Integer()
+    lat = fields.Integer()
+    content = fields.String()
+    data = fields.String()
+    created_date = fields.Integer()
+    layer = fields.Nested(LayerSchema(exclude=["created_date", "content"]))

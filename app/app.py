@@ -77,3 +77,4 @@ def register_blueprints(app):
     app.register_blueprint(api_v1.test.api, url_prefix='/api/v1/test')
     app.register_blueprint(api_v1.layouts.api, url_prefix='/api/v1/layouts')
     app.register_blueprint(api_v1.layers.api, url_prefix='/api/v1/layers')
+    app.register_blueprint(api_v1.points.api, url_prefix='/api/v1/points')

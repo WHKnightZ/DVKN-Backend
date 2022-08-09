@@ -271,5 +271,17 @@
       "id": "f7a3b8fe-16c5-11ed-b71e-0af47d593c6e",
       "name": "Lớp khoa học công nghệ"
     }
+  ],
+  "points": [
+    {
+      "content": "Các yếu tố cơ bản của nội dung bản đồ địa hình là: Địa vật định",
+      "created_date": 1659942624,
+      "data": "[]",
+      "id": "2c672dbe-16e9-11ed-b71e-0af47d593c6f",
+      "name": "Tổ chức hành chính huyện An Lâm",
+      "layer_id": "2c672dbe-16e9-11ed-b71e-0af47d593c6e",
+      "long": 198,
+      "lat": 230
+    }
   ]
 }
