@@ -22,11 +22,11 @@ def create_color():
     _id = uuid1()
     _min = json_body.get("min")
     _max = json_body.get("max")
-    color = json_body.get("color")
+    _color = json_body.get("color")
 
     created_date = get_timestamp_now()
 
-    new_color = Color(id=_id, min=_min, max=_max, color=color, created_date=created_date)
+    new_color = Color(id=_id, min=_min, max=_max, color=_color, created_date=created_date)
     db.session.add(new_color)
     db.session.commit()
 
@@ -74,7 +74,7 @@ def update_color(color_id):
 
     _min = json_body.get("min")
     _max = json_body.get("max")
-    color = json_body.get("color")
+    _color = json_body.get("color")
 
     color: Color = Color.get_by_id(color_id)
     if color is None:
@@ -82,7 +82,7 @@ def update_color(color_id):
 
     color.min = _min
     color.max = _max
-    color.color = color
+    color.color = _color
 
     db.session.commit()
 
