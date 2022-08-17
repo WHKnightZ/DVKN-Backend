@@ -3,7 +3,7 @@ import os
 
 from flask import Flask
 from app.extensions import db
-from app.models import Card, User, Layout, Layer, Point
+from app.models import Card, User, Layout, Layer, Point, Color
 from app.settings import DevConfig, ProdConfig
 from app.utils import get_timestamp_now
 
@@ -52,5 +52,6 @@ if __name__ == '__main__':
     worker.insert_default_items("layouts", Layout)
     worker.insert_default_items("layers", Layer)
     worker.insert_default_items("points", Point)
+    worker.insert_default_items("colors", Color)
 
     print("=" * 50, "Database migration completed", "=" * 50)

@@ -95,3 +95,11 @@ class PointSchema(Schema):
     data = fields.String()
     created_date = fields.Integer()
     layer = fields.Nested(LayerSchema(exclude=["created_date", "content"]))
+
+
+class ColorSchema(Schema):
+    id = fields.String()
+    min = fields.Integer()
+    max = fields.Integer()
+    color = fields.String()
+    created_date = fields.Integer()

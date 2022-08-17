@@ -132,3 +132,17 @@ class Point(db.Model):
     @classmethod
     def get_by_id(cls, _id):
         return cls.query.get(_id)
+
+
+class Color(db.Model):
+    __tablename__ = 'color'
+
+    id = db.Column(db.String(36), primary_key=True)
+    min = db.Column(INTEGER(unsigned=True))
+    max = db.Column(INTEGER(unsigned=True))
+    color = db.Column(db.String(7))
+    created_date = db.Column(INTEGER(unsigned=True), default=get_timestamp_now(), index=True)
+
+    @classmethod
+    def get_by_id(cls, _id):
+        return cls.query.get(_id)

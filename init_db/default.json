@@ -142,91 +142,99 @@
   ],
   "layouts": [
     {
-      "created_date": 1659673360,
-      "data": "[{\"item\":[{\"w\":6,\"h\":3,\"x\":0,\"y\":0,\"i\":\"j1bjba\",\"type\":\"WIDGET_TCHC\",\"moved\":false,\"static\":false},{\"w\":6,\"h\":3,\"x\":6,\"y\":0,\"i\":\"xz5lwq\",\"type\":\"WIDGET_TTLDCQCDP\",\"moved\":false,\"static\":false}],\"title\":\"Tiêu đề fmavgp\",\"layout\":{\"w\":6,\"h\":16,\"i\":\"c9guwd\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề aoousx\",\"layout\":{\"w\":6,\"h\":16,\"i\":\"j3hjji\",\"x\":6,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
-      "id": "3ea2bb62-1476-11ed-b71e-0af47d593c6e",
-      "title": "co' cai' dau` pui`",
+      "created_date": 1660539593,
+      "data": "[{\"item\":[],\"title\":\"Ti\u00eau \u0111\u1ec1 eft0nc\",\"layout\":{\"w\":6,\"h\":13,\"i\":\"a80680\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Ti\u00eau \u0111\u1ec1 59wv7k\",\"layout\":{\"w\":6,\"h\":13,\"i\":\"pcn8ly\",\"x\":6,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
+      "id": "d34d633e-1c55-11ed-b71e-0af47d593c6e",
+      "title": "B\u1ed1 l\u00e0 t\u1ea5t c\u1ea3 1",
       "x": 2,
       "y": 1
     },
     {
-      "created_date": 1659673344,
-      "data": "[{\"item\":[],\"title\":\"bo. cac\",\"layout\":{\"w\":6,\"h\":16,\"i\":\"v5t7yt\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề fx2j3q\",\"layout\":{\"w\":6,\"h\":16,\"i\":\"put50f\",\"x\":6,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
-      "id": "34f081f8-1476-11ed-b71e-0af47d593c6e",
-      "title": "dmm quy' buu",
+      "created_date": 1660539583,
+      "data": "[{\"item\":[],\"title\":\"Ti\u00eau \u0111\u1ec1 30ffbd\",\"layout\":{\"w\":6,\"h\":13,\"i\":\"7so5gc\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Ti\u00eau \u0111\u1ec1 ob3xa7\",\"layout\":{\"w\":6,\"h\":13,\"i\":\"ohg62x\",\"x\":6,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Ti\u00eau \u0111\u1ec1 gsl2tx\",\"layout\":{\"w\":6,\"h\":13,\"i\":\"csnrgn\",\"x\":0,\"y\":13,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Ti\u00eau \u0111\u1ec1 vjs4yq\",\"layout\":{\"w\":6,\"h\":13,\"i\":\"4xvixb\",\"x\":6,\"y\":13,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
+      "id": "b9556a44-1c55-11ed-b71e-0af47d593c6e",
+      "title": "B\u1ed1 x\u00e3 h\u1ed9i 1",
       "x": 2,
-      "y": 1
-    },
-    {
-      "created_date": 1659673334,
-      "data": "[{\"item\":[],\"title\":\"Tiêu đề jggtm4\",\"layout\":{\"w\":6,\"h\":16,\"i\":\"v5t7yt\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề fx2j3q\",\"layout\":{\"w\":6,\"h\":16,\"i\":\"put50f\",\"x\":6,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
-      "id": "2f40dd98-1476-11ed-b71e-0af47d593c6e",
-      "title": "dmm quy' buu",
-      "x": 2,
-      "y": 1
-    },
-    {
-      "created_date": 1659673325,
-      "data": "[{\"item\":[],\"title\":\"Tiêu đề 9isq2u\",\"layout\":{\"w\":6,\"h\":16,\"i\":\"b5xuis\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề rq4yd3\",\"layout\":{\"w\":6,\"h\":16,\"i\":\"vggmth\",\"x\":6,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
-      "id": "29774b22-1476-11ed-b71e-0af47d593c6e",
-      "title": "Bố cục mẫu 12132143",
-      "x": 2,
-      "y": 1
-    },
-    {
-      "created_date": 1659670914,
-      "data": "[{\"item\":[],\"title\":\"Tiêu đề h4sj16\",\"layout\":{\"w\":6,\"h\":16,\"i\":\"xwjq85\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề mh9ly2\",\"layout\":{\"w\":6,\"h\":16,\"i\":\"g89vo9\",\"x\":6,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
-      "id": "8c7a47ac-1470-11ed-b71e-0af47d593c6e",
-      "title": "doi` nhu cc",
-      "x": 2,
-      "y": 1
-    },
-    {
-      "created_date": 1659670906,
-      "data": "[{\"item\":[],\"title\":\"Tiêu đề xzgul5\",\"layout\":{\"w\":6,\"h\":16,\"i\":\"3y40lm\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề 628fjy\",\"layout\":{\"w\":6,\"h\":16,\"i\":\"dvauic\",\"x\":6,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
-      "id": "87bfcd40-1470-11ed-b71e-0af47d593c6e",
-      "title": "dm cuoc doi`",
-      "x": 2,
-      "y": 1
-    },
-    {
-      "created_date": 1659670880,
-      "data": "[{\"item\":[{\"w\":6,\"h\":3,\"x\":0,\"y\":0,\"i\":\"jbzpss\",\"type\":\"WIDGET_TCHC\",\"moved\":false,\"static\":false},{\"w\":6,\"h\":3,\"x\":6,\"y\":0,\"i\":\"jkyt9p\",\"type\":\"WIDGET_TTLDCQCDP\",\"moved\":false,\"static\":false}],\"title\":\"Tiêu đề o4ffzm\",\"layout\":{\"w\":6,\"h\":16,\"i\":\"tj47wk\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[{\"w\":6,\"h\":3,\"x\":0,\"y\":0,\"i\":\"21eh83\",\"type\":\"WIDGET_TTLDCQCDP\",\"moved\":false,\"static\":false}],\"title\":\"Tiêu đề o9wtsf\",\"layout\":{\"w\":6,\"h\":16,\"i\":\"ppbxcb\",\"x\":6,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
-      "id": "78495ac0-1470-11ed-b71e-0af47d593c6e",
-      "title": "Bố cục giống với design",
-      "x": 2,
-      "y": 1
-    },
-    {
-      "created_date": 1659670858,
-      "data": "[{\"item\":[{\"w\":6,\"h\":3,\"x\":0,\"y\":0,\"i\":\"er2lbt\",\"type\":\"WIDGET_TTLDCQCDP\",\"moved\":false,\"static\":false},{\"w\":6,\"h\":3,\"x\":6,\"y\":0,\"i\":\"boolzt\",\"type\":\"WIDGET_TCHC\",\"moved\":false,\"static\":false},{\"w\":6,\"h\":3,\"x\":0,\"y\":3,\"i\":\"1h3fcg\",\"type\":\"WIDGET_TTLDCQCDP\",\"moved\":false,\"static\":false},{\"w\":6,\"h\":3,\"x\":6,\"y\":3,\"i\":\"ro7f1c\",\"type\":\"WIDGET_TCHC\",\"moved\":false,\"static\":false}],\"title\":\"Tiêu đề 3tjdko\",\"layout\":{\"w\":12,\"h\":22,\"i\":\"nw4f3j\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
-      "id": "6ae88946-1470-11ed-b71e-0af47d593c6e",
-      "title": "Bố cục bu`i`",
-      "x": 1,
-      "y": 1
-    },
-    {
-      "created_date": 1659670839,
-      "data": "[{\"item\":[],\"title\":\"Tiêu đề mamtgz\",\"layout\":{\"w\":2,\"h\":16,\"i\":\"hcn07e\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề 3fq9nn\",\"layout\":{\"w\":2,\"h\":16,\"i\":\"2pwu3a\",\"x\":2,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề j11v02\",\"layout\":{\"w\":2,\"h\":16,\"i\":\"4y1pee\",\"x\":4,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề scl7b5\",\"layout\":{\"w\":2,\"h\":16,\"i\":\"alwgd2\",\"x\":6,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề ny4gtm\",\"layout\":{\"w\":2,\"h\":16,\"i\":\"05y6gz\",\"x\":8,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề 2q8xk0\",\"layout\":{\"w\":2,\"h\":16,\"i\":\"nh0wc6\",\"x\":10,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề 0yix7g\",\"layout\":{\"w\":2,\"h\":16,\"i\":\"aju9t3\",\"x\":0,\"y\":16,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề husnfl\",\"layout\":{\"w\":2,\"h\":16,\"i\":\"1w71bs\",\"x\":2,\"y\":16,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề mbw2ut\",\"layout\":{\"w\":2,\"h\":16,\"i\":\"smckyk\",\"x\":4,\"y\":16,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Tiêu đề sumxxa\",\"layout\":{\"w\":2,\"h\":16,\"i\":\"qpur46\",\"x\":6,\"y\":16,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
-      "id": "5fc76cc6-1470-11ed-b71e-0af47d593c6e",
-      "title": "Bố cục mẫu 5 x 2",
-      "x": 5,
       "y": 2
     },
     {
-      "created_date": 1659670818,
-      "data": "[{\"item\":[],\"title\":\"Tiêu đề 5ontx0\",\"layout\":{\"w\":12,\"h\":16,\"i\":\"orfwnb\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
-      "id": "536f59d4-1470-11ed-b71e-0af47d593c6e",
-      "title": "Full màn",
-      "x": 1,
+      "created_date": 1660539573,
+      "data": "[{\"item\":[{\"w\":6,\"h\":3,\"x\":0,\"y\":0,\"i\":\"f6dtph\",\"type\":\"WIDGET_TCHC\",\"moved\":false,\"static\":false}],\"title\":\"Ti\u00eau \u0111\u1ec1 8ilupm\",\"layout\":{\"w\":6,\"h\":13,\"i\":\"3q5car\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Ti\u00eau \u0111\u1ec1 k37sh6\",\"layout\":{\"w\":6,\"h\":13,\"i\":\"krdxvr\",\"x\":6,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
+      "id": "a78101ac-1c55-11ed-b71e-0af47d593c6e",
+      "title": "B\u1ed1 \u0111\u1eddi 1",
+      "x": 2,
       "y": 1
     },
     {
-      "created_date": 1659670817,
-      "data": "[{\"item\":[],\"title\":\"Tiêu đề 5ontx0\",\"layout\":{\"w\":12,\"h\":16,\"i\":\"orfwnb\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
-      "id": "536f59d3-1470-11ed-b71e-0af47d593c6e",
-      "title": "Test trang 2",
-      "x": 1,
+      "created_date": 1660539563,
+      "data": "[{\"item\":[{\"w\":6,\"h\":3,\"x\":0,\"y\":0,\"i\":\"p102zl\",\"type\":\"WIDGET_TCHC\",\"moved\":false,\"static\":false},{\"w\":6,\"h\":3,\"x\":6,\"y\":0,\"i\":\"jtxm6v\",\"type\":\"WIDGET_TTLDCQCDP\",\"moved\":false,\"static\":false}],\"title\":\"Ti\u00eau \u0111\u1ec1 lkjtln\",\"layout\":{\"w\":4,\"h\":13,\"i\":\"gqj55q\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[{\"w\":6,\"h\":3,\"x\":0,\"y\":0,\"i\":\"3gyuwp\",\"type\":\"WIDGET_TTLDCQCDP\",\"moved\":false,\"static\":false},{\"w\":6,\"h\":3,\"x\":6,\"y\":0,\"i\":\"3u49cj\",\"type\":\"WIDGET_TTLDCQCDP\",\"moved\":false,\"static\":false}],\"title\":\"Ti\u00eau \u0111\u1ec1 vfsz8a\",\"layout\":{\"w\":4,\"h\":13,\"i\":\"v6y6xt\",\"x\":4,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[{\"w\":6,\"h\":3,\"x\":0,\"y\":0,\"i\":\"87xkrj\",\"type\":\"WIDGET_TCHC\",\"moved\":false,\"static\":false}],\"title\":\"Ti\u00eau \u0111\u1ec1 rlmyds\",\"layout\":{\"w\":4,\"h\":13,\"i\":\"ilg3h1\",\"x\":8,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Ti\u00eau \u0111\u1ec1 qrd8s3\",\"layout\":{\"w\":4,\"h\":13,\"i\":\"m9n3id\",\"x\":0,\"y\":13,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Ti\u00eau \u0111\u1ec1 jbipe5\",\"layout\":{\"w\":4,\"h\":13,\"i\":\"qvx460\",\"x\":4,\"y\":13,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Ti\u00eau \u0111\u1ec1 f9h293\",\"layout\":{\"w\":4,\"h\":13,\"i\":\"uzu3nt\",\"x\":8,\"y\":13,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
+      "id": "9de6e59e-1c55-11ed-b71e-0af47d593c6e",
+      "title": "B\u1ed1 l\u00e1o b\u1ed1 l\u1ebfu 1",
+      "x": 3,
+      "y": 2
+    },
+    {
+      "created_date": 1660539553,
+      "data": "[{\"item\":[{\"w\":6,\"h\":3,\"x\":0,\"y\":0,\"i\":\"5zijwd\",\"type\":\"WIDGET_TCHC\",\"moved\":false,\"static\":false},{\"w\":6,\"h\":3,\"x\":6,\"y\":0,\"i\":\"leqb0b\",\"type\":\"WIDGET_TTLDCQCDP\",\"moved\":false,\"static\":false}],\"title\":\"Ti\u00eau \u0111\u1ec1 hnxnw6\",\"layout\":{\"w\":6,\"h\":13,\"i\":\"zruvw7\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Ti\u00eau \u0111\u1ec1 lw6nqb\",\"layout\":{\"w\":6,\"h\":13,\"i\":\"cd0pxr\",\"x\":6,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
+      "id": "9459c424-1c55-11ed-b71e-0af47d593c6e",
+      "title": "B\u1ed1 c\u1ee5c m\u1eabu 21",
+      "x": 2,
+      "y": 1
+    },
+    {
+      "created_date": 1660539543,
+      "data": "[{\"item\":[{\"w\":6,\"h\":3,\"x\":0,\"y\":0,\"i\":\"1j31l9\",\"type\":\"WIDGET_TCHC\",\"moved\":false,\"static\":false},{\"w\":6,\"h\":3,\"x\":6,\"y\":0,\"i\":\"lh81qy\",\"type\":\"WIDGET_TTLDCQCDP\",\"moved\":false,\"static\":false}],\"title\":\"Ti\u00eau \u0111\u1ec1 rzkdqv\",\"layout\":{\"w\":6,\"h\":13,\"i\":\"gsjf0n\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[{\"w\":6,\"h\":3,\"x\":0,\"y\":0,\"i\":\"zghi21\",\"type\":\"WIDGET_TCHC\",\"moved\":false,\"static\":false},{\"w\":6,\"h\":3,\"x\":6,\"y\":0,\"i\":\"pike1o\",\"type\":\"WIDGET_TTTT\",\"moved\":false,\"static\":false}],\"title\":\"Ti\u00eau \u0111\u1ec1 ebh71z\",\"layout\":{\"w\":6,\"h\":13,\"i\":\"nb71f3\",\"x\":6,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
+      "id": "8999f4b4-1c55-11ed-b71e-0af47d593c6e",
+      "title": "B\u1ed1 c\u1ee5c m\u1eabu 11",
+      "x": 2,
+      "y": 1
+    },
+    {
+      "created_date": 1660539533,
+      "data": "[{\"item\":[],\"title\":\"Ti\u00eau \u0111\u1ec1 eft0nc\",\"layout\":{\"w\":6,\"h\":13,\"i\":\"a80680\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Ti\u00eau \u0111\u1ec1 59wv7k\",\"layout\":{\"w\":6,\"h\":13,\"i\":\"pcn8ly\",\"x\":6,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
+      "id": "d34d633e-1c55-11ed-b71e-0af47d593c6f",
+      "title": "B\u1ed1 l\u00e0 t\u1ea5t c\u1ea3",
+      "x": 2,
+      "y": 1
+    },
+    {
+      "created_date": 1660539523,
+      "data": "[{\"item\":[],\"title\":\"Ti\u00eau \u0111\u1ec1 30ffbd\",\"layout\":{\"w\":6,\"h\":13,\"i\":\"7so5gc\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Ti\u00eau \u0111\u1ec1 ob3xa7\",\"layout\":{\"w\":6,\"h\":13,\"i\":\"ohg62x\",\"x\":6,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Ti\u00eau \u0111\u1ec1 gsl2tx\",\"layout\":{\"w\":6,\"h\":13,\"i\":\"csnrgn\",\"x\":0,\"y\":13,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Ti\u00eau \u0111\u1ec1 vjs4yq\",\"layout\":{\"w\":6,\"h\":13,\"i\":\"4xvixb\",\"x\":6,\"y\":13,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
+      "id": "b9556a44-1c55-11ed-b71e-0af47d593c6f",
+      "title": "B\u1ed1 x\u00e3 h\u1ed9i",
+      "x": 2,
+      "y": 2
+    },
+    {
+      "created_date": 1660539513,
+      "data": "[{\"item\":[{\"w\":6,\"h\":3,\"x\":0,\"y\":0,\"i\":\"f6dtph\",\"type\":\"WIDGET_TCHC\",\"moved\":false,\"static\":false}],\"title\":\"Ti\u00eau \u0111\u1ec1 8ilupm\",\"layout\":{\"w\":6,\"h\":13,\"i\":\"3q5car\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Ti\u00eau \u0111\u1ec1 k37sh6\",\"layout\":{\"w\":6,\"h\":13,\"i\":\"krdxvr\",\"x\":6,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
+      "id": "a78101ac-1c55-11ed-b71e-0af47d593c6f",
+      "title": "B\u1ed1 \u0111\u1eddi",
+      "x": 2,
+      "y": 1
+    },
+    {
+      "created_date": 1660539503,
+      "data": "[{\"item\":[{\"w\":6,\"h\":3,\"x\":0,\"y\":0,\"i\":\"p102zl\",\"type\":\"WIDGET_TCHC\",\"moved\":false,\"static\":false},{\"w\":6,\"h\":3,\"x\":6,\"y\":0,\"i\":\"jtxm6v\",\"type\":\"WIDGET_TTLDCQCDP\",\"moved\":false,\"static\":false}],\"title\":\"Ti\u00eau \u0111\u1ec1 lkjtln\",\"layout\":{\"w\":4,\"h\":13,\"i\":\"gqj55q\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[{\"w\":6,\"h\":3,\"x\":0,\"y\":0,\"i\":\"3gyuwp\",\"type\":\"WIDGET_TTLDCQCDP\",\"moved\":false,\"static\":false},{\"w\":6,\"h\":3,\"x\":6,\"y\":0,\"i\":\"3u49cj\",\"type\":\"WIDGET_TTLDCQCDP\",\"moved\":false,\"static\":false}],\"title\":\"Ti\u00eau \u0111\u1ec1 vfsz8a\",\"layout\":{\"w\":4,\"h\":13,\"i\":\"v6y6xt\",\"x\":4,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[{\"w\":6,\"h\":3,\"x\":0,\"y\":0,\"i\":\"87xkrj\",\"type\":\"WIDGET_TCHC\",\"moved\":false,\"static\":false}],\"title\":\"Ti\u00eau \u0111\u1ec1 rlmyds\",\"layout\":{\"w\":4,\"h\":13,\"i\":\"ilg3h1\",\"x\":8,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Ti\u00eau \u0111\u1ec1 qrd8s3\",\"layout\":{\"w\":4,\"h\":13,\"i\":\"m9n3id\",\"x\":0,\"y\":13,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Ti\u00eau \u0111\u1ec1 jbipe5\",\"layout\":{\"w\":4,\"h\":13,\"i\":\"qvx460\",\"x\":4,\"y\":13,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Ti\u00eau \u0111\u1ec1 f9h293\",\"layout\":{\"w\":4,\"h\":13,\"i\":\"uzu3nt\",\"x\":8,\"y\":13,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
+      "id": "9de6e59e-1c55-11ed-b71e-0af47d593c6f",
+      "title": "B\u1ed1 l\u00e1o b\u1ed1 l\u1ebfu",
+      "x": 3,
+      "y": 2
+    },
+    {
+      "created_date": 1660539493,
+      "data": "[{\"item\":[{\"w\":6,\"h\":3,\"x\":0,\"y\":0,\"i\":\"5zijwd\",\"type\":\"WIDGET_TCHC\",\"moved\":false,\"static\":false},{\"w\":6,\"h\":3,\"x\":6,\"y\":0,\"i\":\"leqb0b\",\"type\":\"WIDGET_TTLDCQCDP\",\"moved\":false,\"static\":false}],\"title\":\"Ti\u00eau \u0111\u1ec1 hnxnw6\",\"layout\":{\"w\":6,\"h\":13,\"i\":\"zruvw7\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[],\"title\":\"Ti\u00eau \u0111\u1ec1 lw6nqb\",\"layout\":{\"w\":6,\"h\":13,\"i\":\"cd0pxr\",\"x\":6,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
+      "id": "9459c424-1c55-11ed-b71e-0af47d593c6f",
+      "title": "B\u1ed1 c\u1ee5c m\u1eabu 2",
+      "x": 2,
+      "y": 1
+    },
+    {
+      "created_date": 1660539483,
+      "data": "[{\"item\":[{\"w\":6,\"h\":3,\"x\":0,\"y\":0,\"i\":\"1j31l9\",\"type\":\"WIDGET_TCHC\",\"moved\":false,\"static\":false},{\"w\":6,\"h\":3,\"x\":6,\"y\":0,\"i\":\"lh81qy\",\"type\":\"WIDGET_TTLDCQCDP\",\"moved\":false,\"static\":false}],\"title\":\"Ti\u00eau \u0111\u1ec1 rzkdqv\",\"layout\":{\"w\":6,\"h\":13,\"i\":\"gsjf0n\",\"x\":0,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}},{\"item\":[{\"w\":6,\"h\":3,\"x\":0,\"y\":0,\"i\":\"zghi21\",\"type\":\"WIDGET_TCHC\",\"moved\":false,\"static\":false},{\"w\":6,\"h\":3,\"x\":6,\"y\":0,\"i\":\"pike1o\",\"type\":\"WIDGET_TTTT\",\"moved\":false,\"static\":false}],\"title\":\"Ti\u00eau \u0111\u1ec1 ebh71z\",\"layout\":{\"w\":6,\"h\":13,\"i\":\"nb71f3\",\"x\":6,\"y\":0,\"minW\":3,\"minH\":6,\"moved\":false,\"static\":false}}]",
+      "id": "8999f4b4-1c55-11ed-b71e-0af47d593c6f",
+      "title": "B\u1ed1 c\u1ee5c m\u1eabu 1",
+      "x": 2,
       "y": 1
     }
   ],
@@ -282,6 +290,43 @@
       "layer_id": "b5a41fe0-16e6-11ed-b71e-0af47d593c6e",
       "long": 198,
       "lat": 230
+    }
+  ],
+  "colors": [
+    {
+      "color": "#FF4F50",
+      "created_date": 1660709822,
+      "id": "71ff31ac-1de3-11ed-80be-a8a159991220",
+      "max": 50,
+      "min": 30
+    },
+    {
+      "color": "#7367F0",
+      "created_date": 1660709802,
+      "id": "65c7ba6c-1de3-11ed-9b80-a8a159991220",
+      "max": 30,
+      "min": 20
+    },
+    {
+      "color": "#FF9F43",
+      "created_date": 1660709786,
+      "id": "5c740a92-1de3-11ed-8914-a8a159991220",
+      "max": 20,
+      "min": 10
+    },
+    {
+      "color": "#F2C94C",
+      "created_date": 1660709769,
+      "id": "5273d4b4-1de3-11ed-88c3-a8a159991220",
+      "max": 10,
+      "min": 5
+    },
+    {
+      "color": "#20C997",
+      "created_date": 1660709738,
+      "id": "3fbe7b00-1de3-11ed-a9a8-a8a159991220",
+      "max": 5,
+      "min": 0
     }
   ]
 }
