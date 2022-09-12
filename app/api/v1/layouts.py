@@ -34,23 +34,50 @@ def create_layout():
     return send_result()
 
 
-@api.route('', methods=['GET'])
+@api.route('/list', methods=['POST'])
 def get_all_layouts():
-    page = request.args.get('page', 1, type=int)
-    page_size = request.args.get('page_size', 10, type=int)
-    keyword = request.args.get('keyword', "", type=str)
+    ret, output = get_json_body(request, None)
+    if not ret:
+        return output
+
+    json_body = output
+
+    page = json_body.get("pageNumber", 1)
+    page_size = json_body.get("pageSize", 10)
+    keyword = json_body.get("keyword", "")
+    filter_params = json_body.get("filterParam", [])
+    sort = json_body.get("sortingParams", [{"sortOrder": 2, "columnName": "created_date"}])
+
     keyword = f"%{keyword}%"
+    sort = sort[0]
+    sort_order = sort["sortOrder"]
+    sort_column = sort["columnName"]
 
     all_items = Layout.query.filter(Layout.title.like(keyword))
+    for f in filter_params:
+        column_name = f["columnName"]
+        filter_value = f["filterValue"]
+        if column_name == "title":
+            all_items = all_items.filter(Layout.title.like(f"%{filter_value}%"))
+
     total = all_items.count()
 
-    items = all_items.order_by(Layout.created_date.desc()) \
-        .paginate(page=page, per_page=page_size, error_out=False).items
+    items = all_items
+
+    sort_query = Layout.created_date
+    if sort_column == "title":
+        sort_query = Layout.title
+    if sort_order == 1:
+        sort_query = sort_query.asc()
+    else:
+        sort_query = sort_query.desc()
+
+    items = items.order_by(sort_query).paginate(page=page, per_page=page_size, error_out=False).items
 
     results = {
         "items": [{"id": item.id, "title": item.title, "data": item.data, "x": item.x, "y": item.y,
                    "created_date": item.created_date} for item in items],
-        "total": total,
+        "totalCount": total,
     }
 
     return send_result(data=results)
@@ -89,19 +116,7 @@ def update_layout(layout_id):
     return send_result()
 
 
-@api.route('/<layout_id>', methods=['DELETE'])
-def delete_layout(layout_id):
-    layout = Layout.query.filter(Layout.id == layout_id).first()
-    if not layout:
-        return send_error()
-    try:
-        Layout.query.filter(Layout.id == layout_id).delete()
-        db.session.commit()
-    except Exception as ex:
-        return send_error(message=str(ex))
-
-
-@api.route('/delete', methods=['POST'])
+@api.route('', methods=['DELETE'])
 def delete_layouts():
     json_req = request.get_json()
 
