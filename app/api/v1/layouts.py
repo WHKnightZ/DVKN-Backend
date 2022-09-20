@@ -20,9 +20,9 @@ def create_layout():
 
     _id = uuid1()
     title = json_body.get("title")
-    data = json_body.get("data")
-    x = json_body.get("x")
-    y = json_body.get("y")
+    data = json_body.get("configData")
+    x = json_body.get("cols")
+    y = json_body.get("rows")
 
     created_date = get_timestamp_now()
 
@@ -75,8 +75,7 @@ def get_all_layouts():
     items = items.order_by(sort_query).paginate(page=page, per_page=page_size, error_out=False).items
 
     results = {
-        "items": [{"id": item.id, "title": item.title, "data": item.data, "x": item.x, "y": item.y,
-                   "created_date": item.created_date} for item in items],
+        "items": [{"id": item.id, "title": item.title, "created_date": item.created_date} for item in items],
         "totalCount": total,
     }
 
@@ -89,8 +88,9 @@ def get_layout_by_id(layout_id):
     if not item:
         return send_error()
 
-    return send_result(data={"id": item.id, "title": item.title, "data": item.data, "x": item.x, "y": item.y,
-                             "created_date": item.created_date})
+    return send_result(
+        data={"id": item.id, "title": item.title, "configData": item.data, "cols": item.x, "rows": item.y,
+              "created_date": item.created_date})
 
 
 @api.route('/<layout_id>', methods=['PUT'])
@@ -102,7 +102,7 @@ def update_layout(layout_id):
     json_body = output
 
     title = json_body.get("title")
-    data = json_body.get("data")
+    data = json_body.get("configData")
 
     layout: Layout = Layout.get_by_id(layout_id)
     if layout is None:
