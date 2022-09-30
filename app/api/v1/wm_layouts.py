@@ -76,7 +76,8 @@ def get_all_layouts():
     items = items.order_by(sort_query).paginate(page=page, per_page=page_size, error_out=False).items
 
     results = {
-        "items": [{"id": item.id, "title": item.title, "configData": item.data, "created_date": item.created_date} for
+        "items": [{"id": item.id, "title": item.title, "configData": item.config_data, "description": item.description,
+                   "created_date": item.created_date} for
                   item in items],
         "totalCount": total,
     }
