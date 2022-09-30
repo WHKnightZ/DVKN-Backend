@@ -108,6 +108,8 @@ def update_layout(layout_id):
     title = json_body.get("title")
     config_data = json_body.get("configData")
     description = json_body.get("description")
+    cols = json_body.get("cols")
+    rows = json_body.get("rows")
 
     layout: WM_Layout = WM_Layout.get_by_id(layout_id)
     if layout is None:
@@ -116,6 +118,8 @@ def update_layout(layout_id):
     layout.title = title
     layout.config_data = config_data
     layout.description = description
+    layout.cols = cols
+    layout.rows = rows
 
     db.session.commit()
 
