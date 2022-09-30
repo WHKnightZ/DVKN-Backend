@@ -108,8 +108,8 @@ class WM_Layout(db.Model):
     title = db.Column(db.String(100))
     config_data = db.Column(db.String(5000))
     description = db.Column(db.String(500))
-    cols = db.Column(INTEGER(unsigned=True), default=2)
-    rows = db.Column(INTEGER(unsigned=True), default=1)
+    cols = db.Column(INTEGER(unsigned=True))
+    rows = db.Column(INTEGER(unsigned=True))
     created_date = db.Column(INTEGER(unsigned=True), default=get_timestamp_now(), index=True)
 
     @classmethod
