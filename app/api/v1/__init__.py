@@ -9,3 +9,4 @@ from app.api.v1 import layouts
 from app.api.v1 import layers
 from app.api.v1 import points
 from app.api.v1 import colors
+from app.api.v1 import wm_layouts

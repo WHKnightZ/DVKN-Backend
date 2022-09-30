@@ -101,6 +101,22 @@ class Layout(db.Model):
         return cls.query.get(_id)
 
 
+class WM_Layout(db.Model):
+    __tablename__ = 'wm_layout'
+
+    id = db.Column(db.String(36), primary_key=True)
+    title = db.Column(db.String(100))
+    config_data = db.Column(db.String(5000))
+    description = db.Column(db.String(500))
+    cols = db.Column(INTEGER(unsigned=True), default=2)
+    rows = db.Column(INTEGER(unsigned=True), default=1)
+    created_date = db.Column(INTEGER(unsigned=True), default=get_timestamp_now(), index=True)
+
+    @classmethod
+    def get_by_id(cls, _id):
+        return cls.query.get(_id)
+
+
 class Layer(db.Model):
     __tablename__ = 'layer'
 

@@ -3,7 +3,7 @@ import os
 
 from flask import Flask
 from app.extensions import db
-from app.models import Card, User, Layout, Layer, Point, Color
+from app.models import Card, User, Layer, Point, Color
 from app.settings import DevConfig, ProdConfig
 from app.utils import get_timestamp_now
 
@@ -49,7 +49,6 @@ if __name__ == '__main__':
     worker = Worker()
     worker.insert_default_items("users", User)
     worker.insert_default_items("cards", Card)
-    worker.insert_default_items("layouts", Layout)
     worker.insert_default_items("layers", Layer)
     worker.insert_default_items("points", Point)
     worker.insert_default_items("colors", Color)
