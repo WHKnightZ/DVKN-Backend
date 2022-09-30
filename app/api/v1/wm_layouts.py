@@ -77,6 +77,7 @@ def get_all_layouts():
 
     results = {
         "items": [{"id": item.id, "title": item.title, "configData": item.config_data, "description": item.description,
+                   "cols": item.cols, "rows": item.rows,
                    "created_date": item.created_date} for
                   item in items],
         "totalCount": total,
